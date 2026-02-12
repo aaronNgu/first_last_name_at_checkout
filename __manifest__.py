@@ -1,34 +1,15 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "first_last_name_at_checkout",
-
-    'summary': "Short (1 phrase/line) summary of the module's purpose",
-
-    'description': """
-Long description of module's purpose
-    """,
-
+    'name': "First & Last Name at Checkout",
+    'summary': "Separate first and last name fields at checkout and portal",
     'author': "My Company",
     'website': "https://www.yourcompany.com",
-
-    # Categories can be used to filter modules in modules listing
-    # Check https://github.com/odoo/odoo/blob/15.0/odoo/addons/base/data/ir_module_category_data.xml
-    # for the full list
-    'category': 'Uncategorized',
-    'version': '0.1',
-
-    # any module necessary for this one to work correctly
-    'depends': ['base'],
-
-    # always loaded
+    'category': 'Website/Website',
+    'version': '18.0.1.0.0',
+    'license': 'LGPL-3',
+    'depends': ['website_sale', 'partner_firstname'],
     'data': [
-        # 'security/ir.model.access.csv',
-        'views/views.xml',
+        'data/whitelist_fields.xml',
         'views/templates.xml',
     ],
-    # only loaded in demonstration mode
-    'demo': [
-        'demo/demo.xml',
-    ],
 }
-
