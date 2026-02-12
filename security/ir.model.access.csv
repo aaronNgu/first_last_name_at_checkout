@@ -1,2 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_first_last_name_at_checkout_first_last_name_at_checkout,first_last_name_at_checkout.first_last_name_at_checkout,model_first_last_name_at_checkout_first_last_name_at_checkout,base.group_user,1,1,1,1
