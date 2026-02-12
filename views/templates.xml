@@ -5,10 +5,12 @@
     <!-- Checkout: /shop/address                                            -->
     <!-- ================================================================== -->
 
-    <template id="address_firstname_lastname"
+    <template id="address"
               inherit_id="website_sale.address"
-              name="First/Last Name at Checkout">
+              name="First/Last Name at Checkout"
+              priority="110">
 
+        <!-- Replace is necessary: splitting one 'name' field into two separate fields -->
         <div id="div_name" position="replace">
             <div id="div_firstname" class="col-lg-6 mb-2">
                 <label class="col-form-label" for="o_firstname">First name</label>
@@ -35,10 +37,12 @@
     <!-- Portal: /my/account                                                -->
     <!-- ================================================================== -->
 
-    <template id="portal_details_firstname_lastname"
+    <template id="portal_my_details_fields"
               inherit_id="portal.portal_my_details_fields"
-              name="First/Last Name in Portal Details">
+              name="First/Last Name in Portal Details"
+              priority="110">
 
+        <!-- Replace is necessary: splitting one 'name' field into two separate fields -->
         <xpath expr="//input[@name='name']/.." position="replace">
             <div t-attf-class="mb-3 #{error.get('firstname') and 'o_has_error' or ''} col-xl-6">
                 <label class="col-form-label" for="firstname">First name</label>
