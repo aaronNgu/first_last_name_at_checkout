@@ -19,6 +19,12 @@ Both fields are mandatory. Whitespace-only values are rejected.
 
 No configuration is required.
 
+.. figure:: static/description/checkout.gif
+   :alt: Checkout address form with separate first and last name fields
+
+.. figure:: static/description/portal.gif
+   :alt: Portal account page with separate first and last name fields
+
 Credits
 =======
 
