@@ -1,1 +1,1 @@
-* Aaron Ngu
+* Aaron Ngu <aaron@swimmingchicken.com>
